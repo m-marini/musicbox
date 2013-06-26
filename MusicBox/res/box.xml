@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<box xmlns="http://www.mmarini.org/box-0.1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mmarini.org/box-0.1.0 box-0.1.0.xsd ">
+	<transformer class="org.mmarini.sound.NullTransformer">
+		<transformer class="prova">
+			<attribute name="">10</attribute>
+		</transformer>
+		<attribute name="prova">10</attribute>
+		<attribute name=""></attribute>
+	</transformer>
+</box>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://www.mmarini.org/box-0.1.0"
+	xmlns="http://www.mmarini.org/box-0.1.0"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:bx="http://www.mmarini.org/box-0.1.0">
+
+	<xsd:element name="box" type="bx:BoxType" />
+
+	<xsd:complexType name="TransformerType">
+		<xsd:sequence>
+			<xsd:element name="transformer" type="bx:TransformerType"
+				minOccurs="0" maxOccurs="unbounded" />
+			<xsd:element name="attribute" type="bx:AttributeType"
+				minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+		<xsd:attribute name="class" type="xsd:string" use="required" />
+		<xsd:attribute name="id" type="xsd:ID" />
+	</xsd:complexType>
+
+	<xsd:complexType name="BoxType">
+		<xsd:sequence>
+			<xsd:element name="transformer" type="bx:TransformerType"
+				minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="AttributeType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:float">
+				<xsd:attribute name="name" type="xsd:string"
+					use="required" />
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+</xsd:schema>
