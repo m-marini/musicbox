@@ -56,8 +56,6 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.mmarini.sound.model.EchoNode;
 import org.mmarini.sound.model.SequenceNode;
 import org.mmarini.sound.model.SoundEvent;
@@ -70,6 +68,8 @@ import org.mmarini.sound.transfomers.LineProducer;
 import org.mmarini.sound.transfomers.SampleProcessor;
 import org.mmarini.sound.xml.DOMBuilder;
 import org.mmarini.sound.xml.SAXBoxHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
 
 /**
@@ -83,7 +83,7 @@ public class MusicBoxFrame extends JFrame {
 
 	private static final int SAMPLE_RATE = 44100;
 
-	private static Log log = LogFactory.getLog(MusicBoxFrame.class);
+	private static Logger log = LoggerFactory.getLogger(MusicBoxFrame.class);
 
 	/**
 	 * 

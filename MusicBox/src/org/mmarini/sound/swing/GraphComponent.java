@@ -19,8 +19,8 @@ import java.awt.event.MouseListener;
 
 import javax.swing.JComponent;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author marco.marini@mmarini.org
@@ -28,7 +28,7 @@ import org.apache.commons.logging.LogFactory;
  * 
  */
 public class GraphComponent extends JComponent implements Constants {
-	private static Log log = LogFactory.getLog(GraphComponent.class);
+	private static Logger log = LoggerFactory.getLogger(GraphComponent.class);
 
 	/**
          * 

@@ -16,10 +16,10 @@ import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.mmarini.sound.model.SoundProcessor;
 import org.mmarini.sound.model.TransformNode;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author marco.marini@mmarini.org
@@ -50,7 +50,7 @@ public class Palette extends JToolBar {
 		}
 	}
 
-	private static Log log = LogFactory.getLog(Palette.class);
+	private static Logger log = LoggerFactory.getLogger(Palette.class);
 
 	/**
          * 

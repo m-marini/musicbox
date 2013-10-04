@@ -18,8 +18,6 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.mmarini.sound.model.AbstractCompositeNode;
 import org.mmarini.sound.model.AutoMuteNode;
 import org.mmarini.sound.model.ConnectNode;
@@ -32,6 +30,8 @@ import org.mmarini.sound.model.SoundProcessor;
 import org.mmarini.sound.model.ToneShiftNode;
 import org.mmarini.sound.model.TransformNode;
 import org.mmarini.sound.model.VolumeNode;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -42,7 +42,7 @@ import org.xml.sax.helpers.DefaultHandler;
  * 
  */
 public class SAXBoxHandler extends DefaultHandler implements NodeXMLConstants {
-	private static Log log = LogFactory.getLog(SAXBoxHandler.class);
+	private static Logger log = LoggerFactory.getLogger(SAXBoxHandler.class);
 
 	private StringBuffer text;
 

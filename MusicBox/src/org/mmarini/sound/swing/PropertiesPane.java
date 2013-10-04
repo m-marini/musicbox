@@ -13,8 +13,6 @@ import java.awt.CardLayout;
 
 import javax.swing.JPanel;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.mmarini.sound.model.AbstractCompositeNode;
 import org.mmarini.sound.model.AutoMuteNode;
 import org.mmarini.sound.model.ConnectNode;
@@ -26,6 +24,8 @@ import org.mmarini.sound.model.ToneShiftNode;
 import org.mmarini.sound.model.TransformNode;
 import org.mmarini.sound.model.TransformNodeVisitor;
 import org.mmarini.sound.model.VolumeNode;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author marco.marini@mmarini.org
@@ -68,7 +68,7 @@ public class PropertiesPane extends JPanel implements TransformNodeVisitor {
          */
 	private static final String ECHO_CARD = "echo";
 
-	private static Log log = LogFactory.getLog(PropertiesPane.class);
+	private static Logger log = LoggerFactory.getLogger(PropertiesPane.class);
 
 	private VolumePane volumePane;
 
